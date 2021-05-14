@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lockdown Game</title>
+    <link rel="stylesheet" href="csspart.css">
+    <script src="https://kit.fontawesome.com/e391ce7786.js" crossorigin="anonymous"></script>
+    <script src="js.js" defer></script>
+    
+</head>
+<body>
+    <h1>SWAT THE VIRUS</h1>
+    <h2 id="demo">Try your luck !</h2>
+<!-- adding a popup for rules -->
+<div class="box">
+  <a class="buttonpopup" href="#popup1">Rules</a>
+</div>
+
+<div id="popup1" class="overlay">
+  <div class="popup">
+    <h2>General instructions</h2>
+    <a class="close" href="#">&times;</a>
+    <div class="content">
+      <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><h4>Welcome to the lockdown game!!</h4>
+      Please keep in mind the following rules while playing.<br><br>
+      <p>
+         > There are 3 options from which you can choose. They are mask,crowd and virus.Your score will depend on your choice relative to computer's choice based on these conditions mentioned below.
+        </p><br>
+        
+        <p>> Mask defends you from the deadly virus. If your choice is mask and computer's choice is virus you win and vice-versa </p>
+        <br><p>> The vrus can easily attack the crowd. Hence if you choose virus and computer's choice is crowd you win a point and vice-versa.</p>
+        <br><p>> Being in a crowd makes you vulnerable even if you have your masks on. Hence if you choose crowd and computer choice is mask, you win and vice-versa.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--  The Container  -->
+    <div class="container">
+<!--   The first section     -->
+        <div class="section">
+            <div class="info">
+                <h3>You :</h3><span id="playerScore">0</span>
+            </div>
+            <div class="show">
+                <i class="fas fa-head-side-mask"></i>
+            </div>
+        </div>
+<!--   The second section     -->
+
+        <div class="section">
+            <div class="info">
+                <h3>Computer :</h3><span id="computerScore">0</span>
+            </div>
+            <div class="show computer">
+                <i class="fas fa-virus"></i>
+            </div>
+        </div>
+    </div>
+    <h2 style="color: rgb(7, 2, 77);" id="demo2">Choose One !</h2>
+<!-- This selection div contains the buttons   -->
+    <div class="selection">
+        <button class="fas fa-head-side-mask" id="mask"><h6 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Mask</h6></button>
+        <button class="fas fa-users" id="users"><h6 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Crowd</h6></button>
+        <button class="fas fa-virus" id="virus"><h6 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Virus</h6></button>
+    </div>
+
+    
+</body>
+</html>
